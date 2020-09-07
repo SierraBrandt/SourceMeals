@@ -1,0 +1,37 @@
+.header{
+  text-align: center;
+  background-color: #56a3a6;
+  padding: 150px 50px;
+  margin:-8px;
+  border:0px;
+  
+}
+.title{
+  background-color: #e3b505;
+}
+
+.buttonBlue{
+background-color: #56a3a6;
+}
+.title2{
+  background-color: #db504a;
+}
+.navbar{
+   background-color:#084c61;
+}
+.Tahoma{
+  font-family: Tahoma, Trebuchet MS, Impact;
+}
+.padding{
+  padding: 30px 60px;
+  margin: 0px;
+}
+
+.spacing {
+  padding: 30px;
+  text-align:center;
+}
+
+.relative{
+  position: relative;
+}

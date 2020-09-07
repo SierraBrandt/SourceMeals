@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<title>SourceMeals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://i.imgur.com/1E4DMZx.png" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://controllerdata.lacity.org/resource/v2mg-qsxf.json"></script>
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 2px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top ">
+  <div class="w3-bar w3-white w3-padding w3-card " style="letter-spacing:2px;">
+    <a href="#Home" class="w3-bar-item w3-button">SourceMeals</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#Home" class="w3-bar-item w3-button">What we do</a>
+      <a href="#location" class="w3-bar-item w3-button">Locations</a>
+      <a href="#Request" class="w3-bar-item w3-button">Request</a>
+      <a href="#help" class="w3-bar-item w3-button">How to help</a>
+      <a href="#resources" class="w3-bar-item w3-button">Resources</a>
+      
+    </div>
+  </div>
+</div>
+<!-- Header -->
+
+<div class= "header">
+    <img src = "https://i.imgur.com/1E4DMZx.png" alt="logo image" > 
+</div>
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- Home Section -->
+  <div class="w3-row w3-padding-64" id="Home">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://www.tpr.org/sites/kstx/files/styles/medium/public/202003/richard.jpg" class="w3-round w3-image w3-opacity-min" alt="Photo of a man at a food bank" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center title2 whiteText">What We Do</h1><br>
+      <h5 class="w3-center">Finding Meals during the Pandemic</h5>
+      <p class="w3-large">We are committed to assisting people in finding nearby foodbanks, getting food delivered and giving people information on how they can help. 1 in 7 people need food banks to feed their families; with Covid-19, people are loosing their jobs and struggle to find meals to eat. </p>
+      <p class="w3-large w3-text-grey w3-hide-medium,">According to the School Nutrition Accosiation, 20.1 million kids get free lunches at school everyday, that is 68% of all school lunches given to kids. Since the beginning of the pandemic, more and more families have been forced to stay at home and kids are not getting the nutrition they need. </p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Location Section -->
+  <div class="w3-row w3-padding-64 spacing" id="location">
+    <div class="w3-col l6 w3-padding-large, spacing">
+      <h1 class="w3-center title whiteText">Find a location</h1><br>
+        <h5 class="w3-large padding">Enter a California zip code below</h5>
+        <form id="form">
+  <label for="zip_code" class="w3-center">Zip Code:</label>
+  <input type="number" id="zip_code" name="zip_code"><br><br>
+  <input type="submit" value="SUBMIT" class="w3-button w3-light-grey w3-section" >
+</form>
+<div id="output" class="w3-large w3-text-grey w3-hide-medium padding"></div>
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+<img src="https://26l9143to21jk3q5z2xpvg0j-wpengine.netdna-ssl.com/wp-content/themes/soulfull/img/foodbank-map.png" alt="Map of America with food banks" style="width:100%" class = "w3-image w3-opacity-min">	      </div>
+    
+
+      
+      
+    </div>
+  <hr>
+
+  <!-- Request Section -->
+  <div class="w3-container w3-padding-64" id="Request">
+    <h1 class= "gray whiteText spacing">Request Meals</h1><br>
+    
+    <h4 class="w3-large w3-text-grey w3-hide-medium ">Struggling to get meals beacause of Covid? Fill out the form below to request food packages from a local food pantry to be delivered to your home.</h4>
+    <form action="/action_page.php">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Address" required name="Address"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Members in your household" required name="Amount"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SUBMIT REQUEST</button></p>
+    </form>
+  </div>
+<hr>
+
+
+  <!-- Help section -->
+<div class="w3-row w3-padding-64" id="help">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://ca-times.brightspotcdn.com/dims4/default/8b94638/2147483647/strip/true/crop/5100x3582+0+0/resize/1486x1044!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fb9%2F44%2Ffd0f77084eed82e1d3da80ea5c99%2Fla-photos-1staff-515919-la-me-oc-food-bank-6-ajs.jpg" class="w3-round w3-image w3-opacity-min" alt="Photo of a man at a food bank" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center buttonBlue whiteText">Ways to get involved</h1><br>
+      <h5 class="w3-center">Some ways to aid memebers in your community during the pandemic</h5>
+      <p class="w3-large">There are many ways to help food banks during coronavirus. Contact local food banks to ask about volunteering, some pantries are even offering "contactless" volunteering. Money and time is what is most important for food banks, don't be afraid to reach out to your local food bank and ask what they need.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">An easy way to help is to use social media to raise awareness. Becoming informed about the need of food banks can raise awareness to others in the comforts of your own home. </p>
+    </div>
+  </div>
+  <hr>
+
+
+
+<!-- Resource Section -->
+  <div class="w3-container w3-padding-64 spacing" id="resources">
+    <h1 class="w3-padding-64 navbar whiteText">More Resources</h1><br>
+    <div class="w3-quarter boxpadding">
+      <img src="https://cdn.vox-cdn.com/thumbor/UsN-ZGGP3pJ_wQn8VZI9CMVshqk=/0x0:2501x1667/1200x900/filters:focal(1771x474:2171x874)/cdn.vox-cdn.com/uploads/chorus_image/image/60128553/shutterstock_672217393.18.jpg" alt="kids eating spagetti" style="width:100%" class = "w3-image w3-opacity-min textpadding">
+      <h3><a href="https://wallethacks.com/kids-eat-free-restaurants/" class = "link">Kids Eat Free</a></h3>
+      <p class = "textpadding w3-text-grey">This website offers a large list of resturants where kids can eat free.</p>
+    </div>
+    
+    <div class="w3-quarter boxpadding">
+      <img src="https://www.wtoc.com/resizer/UiBhcD0XpZlfL5mGSj4-4GvAMdQ=/1200x900/cloudfront-us-east-1.images.arcpublishing.com/raycom/F6I4RXBXY5AM3JR7MQYKNOQXJM.jpg" alt="man delivering grocceries" style="width:100%" class = "w3-image w3-opacity-min textpadding">
+      <h3><a href="https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program" class = "link">SNAP</a></h3>
+      <p class = "textpadding w3-text-grey">Find out if you are eligible for the Supplemental Nutrition Assistance Program (SNAP)</p>
+     
+    </div>
+    <div class="w3-quarter boxpadding">
+      <img src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2020/02/woman-label-can-grocery-store-shopping-face-mask.jpg?fit=1200%2C900&ssl=1" alt="lady in grocery store" style="width:100%" class = "w3-image w3-opacity-min textpadding">
+      <h3><a href="https://thekrazycouponlady.com/beginners" class = "link">Couponing</a></h3>
+      <p class = "textpadding w3-text-grey">Learn how to save money through couponing with this site.</p>
+    </div>
+    <div class="w3-quarter boxpadding">
+      <img src="https://cdn.vox-cdn.com/thumbor/iOVesOpN9SrRFSD6FovAtRknrGQ=/0x0:3600x2403/1200x900/filters:focal(1512x914:2088x1490)/cdn.vox-cdn.com/uploads/chorus_image/image/60038801/The_Fly_34.31.jpg" class = "w3-image w3-opacity-min textpadding" alt="dinner table with food" style="width:100%">
+      <h3><a href="https://www.tasteofhome.com/collection/cheap-dinner-ideas/" class = "link">Family Dinners</a></h3>
+      <p class = "textpadding w3-text-grey">60 family dinners you can make for under $10.</p>
+    </div>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p class="w3-text-grey">AIHacks 2020 Sierra Brandt </p>
+</footer>
+
+</body>
+
+<script>
+      var form = document.getElementById('form');
+      var output = document.getElementById('output');
+
+      form.onsubmit = () => {
+      var zip_code = document.getElementById('zip_code').value;
+      fetch('https://controllerdata.lacity.org/resource/v2mg-qsxf.json?zip_code=' + zip_code)
+      .then(res => res.json())
+      .then(res => {
+        output.innerHTML = res[0].name + ' - ' + res[0].street_address + ' - ' + res[0].phone;
+      });
+      return false;
+      };
+</script>
+
+</html>
